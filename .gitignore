@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files
+*.csv
+*.data
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.parquet
+*.db
+*.sqlite
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.h5
+*.pb
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and outputs
+logs/
+*.log
+*.out
+*.ipynb
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Test files
+*.pytest_cache
+.coverage
+htmlcov/
+
+# Example files
+example*
+sample*
+
+# Specific to this project
+/best_xgboost_model.pkl
+/test_data.csv
+/confusion_matrix.png
