@@ -45,5 +45,43 @@ Accuracy, Precision, Recall, F1-Score
 ROC AUC for binary classification performance
 
 
+## 2.Visual Analysis
+Confusion Matrix
+
+ROC Curve
+
+Precision-Recall Curve
+
+Feature Importance (Top 20)
+
+## 3. Classification Report
+Detailed output including precision, recall, f1-score for each class (Readmit, No Readmit).
+
+# Key Insights
+SMOTE significantly improved model’s sensitivity to the minority class.
+
+Certain features like num_inpatient, number_diagnoses, time_in_hospital, and specific medications had high predictive importance.
+
+AUC and PRC curves provide robust visual validation of model performance.
+
+
+# Outputs for Reporting
+confusion_matrix.png
+
+roc_curve.png
+
+precision_recall_curve.png
+
+feature_importance.png
+
+Saved test set: diabetic_data_cleaned.csv
+
+# Future Work
+Integrate model into a web application for deployment
+
+Explore more advanced models (e.g., LightGBM, Neural Networks)
+
+Implement cross-site validation using patient demographic segmentation
+
 
 
