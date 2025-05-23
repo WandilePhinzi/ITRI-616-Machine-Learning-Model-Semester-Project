@@ -1,1 +1,49 @@
-# ITRI-616-Machine-Learning-Model-Semester-Project
+# Diabetes Readmission Prediction Project
+
+
+This project focuses on predicting hospital readmissions within 30 days for diabetic patients using the XGBoost machine learning algorithm. The dataset used originates from a large collection of hospital records, which undergoes thorough preprocessing, feature engineering, and model evaluation to build a robust classifier.
+
+## Setup and Requirements
+Install Python 3.7+
+Required Libraries (install via pip if needed):
+pip install pandas numpy scikit-learn seaborn matplotlib xgboost imbalanced-learn joblib
+
+
+## Data Preprocessing Steps
+### 1.Initial Data Cleaning
+Removed duplicates and handled missing values (race, payer_code, diag_1, etc.)
+Converted certain string-based columns into consistent labels (e.g., age bin mapping)
+Dropped irrelevant or redundant features (e.g., encounter_id, patient_nbr)
+
+### 2.Feature Engineering
+Created new binary target variables:
+readmitted_30: 1 if patient readmitted within 30 days
+readmitted_any: 1 if patient was readmitted at all
+Encoded medications and other categorical features
+Grouped diagnosis codes using ICD-9 groupings
+Created new features like med_change, num_diagnoses, weight_recorded
+
+### 3. Feature Scaling
+Applied StandardScaler to numerical features
+
+# Model Training Pipeline
+## Data Splitting
+70% training / 30% testing split using train_test_split
+SMOTE used to balance the imbalanced target classes
+
+## Model: XGBoost
+Hyperparameter tuning via RandomizedSearchCV
+Parameters tested: n_estimators, max_depth, learning_rate, subsample
+
+## Final Model
+Trained with the best parameters from search
+Saved as best_xgboost_model.pkl for deployment
+
+# Model Evaluation
+## 1. Metrics Reported
+Accuracy, Precision, Recall, F1-Score
+ROC AUC for binary classification performance
+
+
+
+
