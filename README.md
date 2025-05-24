@@ -15,7 +15,7 @@ Removed duplicates and handled missing values (race, payer_code, diag_1, etc.)
 Converted certain string-based columns into consistent labels (e.g., age bin mapping)
 Dropped irrelevant or redundant features (e.g., encounter_id, patient_nbr)
 
-### 2.Feature Engineering
+### 2. Feature Engineering
 Created new binary target variables:
 readmitted_30: 1 if patient readmitted within 30 days
 readmitted_any: 1 if patient was readmitted at all
@@ -45,7 +45,7 @@ Accuracy, Precision, Recall, F1-Score
 ROC AUC for binary classification performance
 
 
-## 2.Visual Analysis
+## 2. Visual Analysis
 Confusion Matrix
 
 ROC Curve
